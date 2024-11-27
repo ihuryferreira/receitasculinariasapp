@@ -1,0 +1,20 @@
+@media screen and (max-width: 425px) {
+  .fontSize, .fontSize a{
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .fontSize{
+    font-size: 12px;
+    padding: 12px;
+    gap: 4px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .fontSize, .fontSize a{
+    font-size: 11px;
+  }
+}

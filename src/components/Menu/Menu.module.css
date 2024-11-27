@@ -1,0 +1,49 @@
+/* Menu */
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: .4rem 4rem;
+}
+
+.linkHome{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .48rem;
+}
+
+header a img{
+  width: 4.3rem;
+}
+
+header a h1{
+  font-size: 1.8rem;
+  color: #FFFFFF;
+}
+
+@media screen and (max-width: 425px) {
+  .navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .2rem;
+  }
+  
+  .linkHome{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: .40rem;
+    padding: .75rem;
+  }
+  
+  header a img{
+    width: 3rem;
+  }
+  
+  header a h1{
+    font-size: 1.4rem;
+  }
+}

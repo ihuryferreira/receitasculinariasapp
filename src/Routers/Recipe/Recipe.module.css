@@ -1,0 +1,268 @@
+.box {
+  margin: 3rem 0;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column; /* Alinha elementos verticalmente */
+  align-items: center; /* Centraliza horizontalmente */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 400px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+  background: transparent;
+  background-color: transparent;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.box::after {
+  content: '🔍';
+  position: absolute;
+  top: -22px;
+  left: -10px;
+  font-size: 2rem;
+  z-index: 0;
+}
+
+.inputPesquisa {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  box-sizing: border-box;
+  overflow: hidden;
+  z-index: 111;
+}
+
+.inputPesquisa:focus {
+  border-color: #007bff;
+  box-shadow: 0px 0px 5px rgba(0, 123, 255, 0.3);
+}
+
+
+.listItems {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: minmax(300px, auto);
+  grid-template-areas: 
+    "boxItem-1 boxItem-2 boxItem-3 boxItem-4"
+    "boxItem-5 boxItem-6 boxItem-7 boxItem-8"
+    "boxItem-9 boxItem-10 boxItem-11 boxItem-12"
+    "boxItem-13 boxItem-14 boxItem-15 boxItem-16"
+    "boxItem-17 boxItem-18 boxItem-19 boxItem-20"
+    "boxItem-21 boxItem-22 boxItem-23 boxItem-24"
+    "boxItem-25 boxItem-25 boxItem-25 boxItem-25";
+  gap: 1.8rem;
+  padding: 2rem;
+  height: auto;
+}
+
+.boxItem{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 280px;
+  height: 340px;
+  border: 1px solid #1F2937;
+  background-color: #FFF;
+  box-shadow: 3px 2px 3px #130136;
+  border-radius: 4px;
+  padding: 1em;
+  position: relative;
+}
+
+.boxItem::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: -22px;
+  width: 200px;
+  height: 25px;
+  background-color: #1F2937;
+  border-radius: 8px;
+  z-index: 0;
+}
+
+.boxItem-1 {
+  grid-area: item1;
+}
+
+.boxItem-2 {
+  grid-area: item2;
+}
+
+.boxItem-3 {
+  grid-area: item3;
+}
+
+.boxItem-4 {
+  grid-area: item4;
+}
+
+.boxItem-5 {
+  grid-area: item5;
+}
+
+.boxItem-6 {
+  grid-area: item6;
+}
+
+.boxItem-7 {
+  grid-area: item7;
+}
+
+.boxItem-8 {
+  grid-area: item8;
+}
+
+.boxItem-9 {
+  grid-area: item9;
+}
+
+.boxItem-10 {
+  grid-area: item10;
+}
+
+.boxItem-11 {
+  grid-area: item11;
+}
+
+.boxItem-12 {
+  grid-area: item12;
+}
+
+.boxItem-13 {
+  grid-area: item13;
+}
+
+.boxItem-14 {
+  grid-area: item14;
+}
+
+.boxItem-15 {
+  grid-area: item15;
+}
+
+.boxItem-16 {
+  grid-area: item16;
+}
+
+.boxItem-17 {
+  grid-area: item17;
+}
+
+.boxItem-18 {
+  grid-area: item18;
+}
+
+.boxItem-19 {
+  grid-area: item19;
+}
+
+.boxItem-20 {
+  grid-area: item20;
+}
+
+.boxItem-21 {
+  grid-area: item21;
+}
+
+.boxItem-22 {
+  grid-area: item22;
+}
+
+.boxItem-23 {
+  grid-area: item23;
+}
+
+.boxItem-24 {
+  grid-area: item24;
+}
+
+.boxItem-25 {
+  grid-area: item25;
+}
+
+
+.boxItem h2 {
+  margin-top: 1.3rem;
+  font-size: 1.2rem;
+  text-align: center;
+  color: #1F2937;
+}
+
+.boxItem p {
+  position: absolute;
+  top: -10px;
+  left: -15px;
+  z-index: 999;
+  color: #FFF;
+}
+
+.boxItem img {
+  width: 80%;
+  border-radius: 8px;
+}
+
+.boxItem a{
+  padding: .55rem 1rem;
+  background-color: #4f5d70a6;
+  color: #FFF;
+  border-radius: 4px;
+}
+
+.boxItem a:hover {
+  background-color: #1F2937;
+}
+
+@media screen and (max-width: 1075px) {
+  .listItems{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .box {
+    margin: 3rem 0;
+    padding: 1rem;
+    width: 90%;
+  }
+  
+  .box::after {
+    content: '🔍';
+    position: absolute;
+    top: -22px;
+    left: -10px;
+    font-size: 2rem;
+    z-index: 111;
+  }
+
+  .listItems{
+    padding: 10px;
+  }
+
+  .boxItem::before {
+    top: -10px;
+    left: -12px;
+    width: 195px;
+    height: 25px;
+  }
+  .boxItem p {
+    left: -8px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .inputPesquisa{
+    padding: 5px;
+  }
+  .inputPesquisa::placeholder{
+    font-size: 14.3px;
+  }
+}
