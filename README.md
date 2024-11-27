@@ -8,7 +8,7 @@
 
 <p align="center">Este projeto é um site de receitas culinárias que permite aos usuários buscar receitas através de um campo de pesquisa. Ao clicar em uma das receitas, o usuário pode visualizar os detalhes da receita e o modo de preparo do prato. A aplicação foi desenvolvida utilizando React e Vite, e faz uso da API do TheMealDB para obter os dados das receitas.</p>
 <h1 align="center">
-  <img height="500" alt="demo" title="demo" src=""/>
+  <img height="500" alt="demo" title="demo" src="https://github.com/user-attachments/assets/1e2e1e70-98ac-41c0-868f-38a4b72f8a3f"/>
 </h1>
 
 ## 📦 URL do Site
