@@ -24,5 +24,5 @@ https://receita-app-eta.vercel.app/
 - [Tailwind CSS](https://www.typescriptlang.org/)
 
 ## 🚀 Autor
-| [<img height="100" src="https://avatars.githubusercontent.com/u/82301009?v=4"><br><sub>@denilson.dev</sub>](https://github.com/ihuryferreira) |
+| [<img height="100" src="https://avatars.githubusercontent.com/u/82301009?v=4"><br><sub>@ihuryferreira.dev</sub>](https://github.com/ihuryferreira) |
 |--|
