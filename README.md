@@ -15,9 +15,6 @@
 ```bash
 https://receita-app-eta.vercel.app/
 ```
-
-```
-#
 ## :computer: Tecnologias usadas no projeto
 - [Node.js](https://nodejs.org/en/)
 - [React](https://www.postgresql.org)
